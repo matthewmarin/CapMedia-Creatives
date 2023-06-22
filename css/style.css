@@ -10,11 +10,20 @@
     margin-right: 50px;
 }
 .navbar {
-    background-color: black;
+    background-color: #1a1c20;
     margin-top: -10px;
     margin-bottom: -20px;
 }
 
+.navbar-brand{
+    color: #f4f4f4;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: #E6B31E;
+}
 .custom-toggler.navbar-toggler {
     border-color: lightgreen;
 }
@@ -25,7 +34,7 @@
 }
 
 .nav-item a {
-    color: yellow;
+    color: #fdfdfd;
     font-size: 1.5rem;
     font-weight: 500;
     margin-right: 40px;
@@ -36,7 +45,7 @@
     width: 100px;
 }
 .nav-item a:hover {
-    color: red;
+    color: #E6B31E;
 }
 
 /* Hero Section */

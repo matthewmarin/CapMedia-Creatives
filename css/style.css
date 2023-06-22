@@ -9,11 +9,13 @@
 .navbar-nav {
     margin-right: 50px;
     color: #f4f4f4;
-}
-.navbar {
-    background-color: #1a1c20;
     margin-top: -10px;
     margin-bottom: -20px;
+}
+.navbar {
+    background-color: #181a1c;
+    margin-top: -150px;
+    height: 100px;
 }
 
 .navbar-brand{
@@ -46,6 +48,7 @@
 .l-img {
     height:100px;
     width: 100px;
+    overflow: hidden;
 }
 .nav-item a:hover {
     color: #E6B31E;
@@ -54,7 +57,8 @@
 /* Hero Section */
 
 .c-item {
-    height: 90.9vh;
+    height: 105.2vh;
+    padding-top: 150px;
 }
 
 .c-img {
@@ -159,6 +163,11 @@
     }
 }
 
+.about-ceo {
+    padding-top: 100px;
+}
+
+
 /* Breakpoints */
 
 @media (max-width: 576px) {
@@ -168,7 +177,6 @@
     .navbar-brand img {
         width: 70px;
         height: 70px;
-        margin-left: -50px;
     }
     .navnav {
         padding-bottom: 10px;

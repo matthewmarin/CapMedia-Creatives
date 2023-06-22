@@ -8,6 +8,7 @@
 
 .navbar-nav {
     margin-right: 50px;
+    color: #f4f4f4;
 }
 .navbar {
     background-color: #1a1c20;
@@ -57,5 +58,15 @@
 .c-img {
     height: 100%;
     object-fit:cover;
-    filter: brightness(0.6);
+    filter: brightness(0.2);
+}
+
+.carousel-caption h5 {
+    color: #E6B31E;
+}
+
+.carousel-caption p {
+    color: #f4f4f4;
+    font-weight: 500;
+    font-weight: 1000px;
 }

@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
-.carousel-item {
-    width: auto;
-    height: 92vh;
-    margin-top: 2px;
+
+/* Hero Section */
+
+.c-item {
+    height: 90.9vh;
+}
+
+.c-img {
+    height: 100%;
+    object-fit:cover;
+    filter: brightness(0.6);
 }

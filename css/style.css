@@ -173,32 +173,41 @@
 
 .card {
     border: none;
+    background-color: #E6B31E;
 }
 .info-ceo {
-    background-color: #E6B31E;
+    background-color: #E6B31E
 }
 
 .info-ceo h3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 120px;
     text-transform: uppercase;
     text-shadow: 4px 2px 1px rgba(244, 244, 244, 1);
 }
 
 .info-ceo h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+}
+
+.ceo-name {
+
+    border-radius: 10px;
+    background-color: #E6B31E;
+    position: relative;
+    z-index: 300;
+    top: 130px;
 }
 
 .ceo-img {
     position: relative;
     z-index: 150;
     height: 60vh;
-
+    top: 150px;
 }
 
 .info-about {
@@ -207,7 +216,7 @@
     position: absolute;
     padding: 10px;
     width: 20vw;
-    height: 70vh;
+    height: 55vh;
     border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
     display: block;
     box-shadow: #00abd0;
@@ -217,7 +226,7 @@
     z-index: 100;
     animation: morph 6s linear infinite;
     border: 2px solid #f4f4f4;
-    top: 1vh;
+    top: 200px;
     left: 100px;
 }
 
@@ -236,9 +245,6 @@
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
     }
 }
-.card-body {
-    background-color: #E6B31E;
-}
 .card-body h2 {
     font-size: 4rem;
     text-align: center;
@@ -251,17 +257,18 @@
 }
 
 .content-about {
-font-size: 1.3rem;
-padding-right: 80px;
-padding-left: 80px;
+font-size: 1.2rem;
+font-weight: 600;
 text-indent: 5%;
 text-align: justify;
-line-height: 32px;
+line-height: 30px;
 color: #181a1c;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 .content-about p {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 /* Breakpoints */
 

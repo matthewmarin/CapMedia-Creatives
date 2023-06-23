@@ -57,7 +57,7 @@
 /* Hero Section */
 
 .c-item {
-    height: 105.2vh;
+    height: 105.9vh;
     padding-top: 150px;
 }
 
@@ -163,29 +163,42 @@
     }
 }
 
-
-/* About Page */
+/* About */
 
 .about-ceo {
     height: 100vh;
     padding-top: 100px;
+    background-color: #E6B31E;
 }
 
-.about-info h2 {
-    font-size: 4rem;
+.card {
+    border: none;
+}
+.info-ceo {
+    background-color: #E6B31E;
+}
+
+.info-ceo h3 {
+    font-size: 3rem;
     font-weight: 700;
-    text-transform: uppercase;
     text-align: center;
-    padding: -100px;
-    margin-bottom: 10px;
-    color: #181a1c;
-    margin-top: 10px;
+    margin-top: 120px;
+    text-transform: uppercase;
+    text-shadow: 4px 2px 1px rgba(244, 244, 244, 1);
 }
 
-.about-ceo {
-    background-color: #E6B31E ;
-    z-index: 10;
-    height: 100vh;
+.info-ceo h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ceo-img {
+    position: relative;
+    z-index: 150;
+    height: 60vh;
+
 }
 
 .info-about {
@@ -204,9 +217,8 @@
     z-index: 100;
     animation: morph 6s linear infinite;
     border: 2px solid #f4f4f4;
-    z-index: 100;
-    top: 115vh;
-    left: 130px;
+    top: 1vh;
+    left: 100px;
 }
 
 @keyframes morph {
@@ -224,46 +236,35 @@
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
     }
 }
-
-.card {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card-body {
+    background-color: #E6B31E;
 }
-
-.content {
-    display: flex;
-}
-.ceo-info {
-    justify-content: center;
+.card-body h2 {
+    font-size: 4rem;
     text-align: center;
-    margin-top: 100px;
-}
-
-.ceo-img {
-    position: relative;
-    z-index: 150;
-    margin-top: -50px;
-}
-
-.ceo-info h3 {
-    margin-top: 80px;
-    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #f4f4f4;
+    text-shadow: 4px 2px 2px rgba(24, 26, 28, 1);
 }
 
-.ceo-info h4 {
-    font-size: 1.4rem;
+.content-about {
+font-size: 1.3rem;
+padding-right: 80px;
+padding-left: 80px;
+text-indent: 5%;
+text-align: justify;
+line-height: 32px;
+color: #181a1c;
 }
 
-.about-info {
-    font-size: 1.2rem;
-    padding-right: 100px;
-    text-align: justify;
+.content-about p {
+    margin-bottom: 25px;
 }
 /* Breakpoints */
+
 
 @media (max-width: 576px) {
     .navbar-brand {
@@ -292,14 +293,11 @@
     }
 
     .info-about {
-        height: 200px;
-        left: 40px;
-        margin-top: 110px;
+        height: 50vh;
+        width: 70vw;
+        left: 50px;
     }
 
-    .about-ceo h2 {
-        
-    }
 
     .ceo-info h3 {
         margin-top: 10px;
@@ -322,4 +320,4 @@
     .custom-toggler.navbar-toggler{
       margin-right: 30px;
     }
-  }
+  } 

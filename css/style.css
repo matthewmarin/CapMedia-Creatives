@@ -176,7 +176,7 @@
     background-color: #E6B31E;
 }
 .info-ceo {
-    background-color: #E6B31E
+    background-color: #E6B31E;
 }
 
 .info-ceo h3 {
@@ -195,19 +195,19 @@
 }
 
 .ceo-name {
-
     border-radius: 10px;
     background-color: #E6B31E;
     position: relative;
     z-index: 300;
-    top: 130px;
+    top: 40px;
 }
 
 .ceo-img {
     position: relative;
     z-index: 150;
     height: 60vh;
-    top: 150px;
+    top: 60px;
+    left: 40px;
 }
 
 .info-about {
@@ -226,8 +226,8 @@
     z-index: 100;
     animation: morph 6s linear infinite;
     border: 2px solid #f4f4f4;
-    top: 200px;
-    left: 100px;
+    top: 110px;
+    left: 130px;
 }
 
 @keyframes morph {
@@ -251,7 +251,7 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     color: #f4f4f4;
     text-shadow: 4px 2px 2px rgba(24, 26, 28, 1);
 }
@@ -270,6 +270,95 @@ margin-right: 20px;
 .content-about p {
     margin-bottom: 20px;
 }
+/* Portfolio */
+.portfolio {
+    height: 100vh;
+}
+/* Services */
+.services {
+    height: 100vh;
+    background-color: #E6B31E;
+}
+/* Contact */
+.contact {
+    height: 100vh;
+    background-color: #181a1c;
+    padding-top: 100px;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
 /* Breakpoints */
 
 
@@ -328,3 +417,15 @@ margin-right: 20px;
       margin-right: 30px;
     }
   } 
+
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }

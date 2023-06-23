@@ -163,11 +163,106 @@
     }
 }
 
+
+/* About Page */
+
 .about-ceo {
+    height: 100vh;
     padding-top: 100px;
 }
 
+.about-info h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: -100px;
+    margin-bottom: 10px;
+    color: #181a1c;
+    margin-top: 10px;
+}
 
+.about-ceo {
+    background-color: #E6B31E ;
+    z-index: 10;
+    height: 100vh;
+}
+
+.info-about {
+    background: #181a1c;
+    font-size: 12px;
+    position: absolute;
+    padding: 10px;
+    width: 20vw;
+    height: 70vh;
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    display: block;
+    box-shadow: #00abd0;
+    border: 1px solid #f4f4f4;
+    outline: 3px solid #f4f4f4;
+    color: #191919;
+    z-index: 100;
+    animation: morph 6s linear infinite;
+    border: 2px solid #f4f4f4;
+    z-index: 100;
+    top: 115vh;
+    left: 130px;
+}
+
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    60% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+    80% {
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+.card {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+.ceo-info {
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ceo-img {
+    position: relative;
+    z-index: 150;
+    margin-top: -50px;
+}
+
+.ceo-info h3 {
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ceo-info h4 {
+    font-size: 1.4rem;
+}
+
+.about-info {
+    font-size: 1.2rem;
+    padding-right: 100px;
+    text-align: justify;
+}
 /* Breakpoints */
 
 @media (max-width: 576px) {
@@ -190,7 +285,38 @@
         height: 40px;
         margin-bottom: 10px;
     }
+
+    .about-info {
+        font-size: .6rem;
+        padding-right: 30px;
+    }
+
+    .info-about {
+        height: 200px;
+        left: 40px;
+        margin-top: 110px;
+    }
+
+    .about-ceo h2 {
+        
+    }
+
+    .ceo-info h3 {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+    .ceo-info h4 {
+        font-size: .7rem;
+    }
+
+    .ceo-img {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
   }
+
+
 
   @media (min-width: 768px) and (max-width: 991px) {
     .custom-toggler.navbar-toggler{

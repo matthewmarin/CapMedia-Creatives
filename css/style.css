@@ -6,7 +6,8 @@
 
 body {
     width: auto;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* NavBar Start */
@@ -58,6 +59,7 @@ body {
 
 #hero-carousel {
     background-color: #181a1c;
+    margin-top: -100px;
 }
 .c-img {
     height: 100%;
@@ -160,11 +162,9 @@ body {
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
-
 /* Hero Section End */
 
 /* About Section Srart */
-
 .about-ceo {
     padding-top: 100px;
     background-color: #E6B31E;
@@ -197,7 +197,6 @@ body {
     position: relative;
     z-index: 300;
 }
-
 
 .card {
     border: none;
@@ -262,14 +261,11 @@ body {
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
     }
 }
-
 /* About Section End */
 
 /* Portfolio Start */
-
-/* Contact Start */
 .portfolio{
-    padding-top: 150px;
+    padding-top: 100px;
     background-color: #181a1c;
 }
 .portfolio h2{
@@ -290,7 +286,7 @@ body {
     width: 98vw;
     height: 100vh;
     grid-template-columns: repeat(var(--m),auto);
-    padding-top: 50px;
+    padding-top: 30px;
   }
   
   .gallery > img {
@@ -309,11 +305,91 @@ body {
     width:  calc(var(--w)*var(--f));
     height: calc(var(--h)*var(--f));
   }
-/* Contact End */
+/* Portfolio End */
+
+/* Services Start */
+.services {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #E6B31E;
+    padding: 80px;
+  }
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row1 h2 {
+    color: #181a1c;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .column1{
+    width: 100%;
+    height: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card1 {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#181a1c 50%, #f4f4f4 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50px;
+  }
+  .card1 h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #E6B31E;
+    margin: 1em 0;
+    text-transform: uppercase;
+  }
+  .card1 p {
+    color: #f4f4f4;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .icon-wrapper1 {
+    background-color: #E6B31E;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #181a1c;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .card1:hover {
+    background-position: 0 100%;
+  }
+  .card1:hover .icon-wrapper1 {
+    background-color: #ffffff;
+    color: #2c7bfe;
+  }
+  .card1:hover h3 {
+    color: #ffffff;
+  }
+  .card1:hover p {
+    color: #f0f0f0;
+  }
+/* Services End */
+
+
 
 /* BreakPoints Start */
-
-
 @media (min-width: 375px) {
     .navbar-brand {
         color: #f4f4f4;
@@ -367,6 +443,10 @@ body {
         height: 50vh;
         width: 30vw;
     }
+    .column1 {
+        flex: 0 50%;
+        max-width: 50%;
+    }
  }
 
 
@@ -380,6 +460,10 @@ body {
         color: #f4f4f4;
         font-size: 1.2rem;
         margin-right: 10px;
+    }
+    .column1 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
     }
  }
 

@@ -5,236 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      
+     <!-- Font CSS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
      
-    <!-- Font CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    
+     <!-- Main CSS -->
+     <link rel="stylesheet" href="./css/style.css">
 <body>
+   
+     
 
-    <!-- NAVBAR START -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="home">
-        <div class="container-fluid navnav">
-          <a class="navbar-brand" href="#">
-            <img src="./Images/logo.png" class="l-img" alt="logo" height="30" width="30">Cap-Media Creatives</a>
-          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mb-3" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#hero-carousel">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- NAVBAR END -->
+    <!-- HOME START -->
+    
+            <nav class="navbar navbar-expand-lg sticky-top" id="home">
+                <div class="container-fluid navnav">
+                  <a class="navbar-brand" href="#">
+                    <img src="./Images/logo.png" class="l-img" alt="logo" height="30" width="30">Cap-Media Creatives</a>
+                  <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse mb-3" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#hero-carousel">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+    <div class="home">
+        <section class="hero" id="home"></section>
+            <div  id="hero-carousel" class="container-fluid carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button-slide" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button-slide" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button-slide" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                        <img src="./Images/1.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption mb-5">
+                            <p class="fs-3 text-uppercase">Unleashing Creativity, One Design at a Time</p>
+                            <h5 class="mb-5 display-1 fw-bolder text-capitalized text-uppercase">Your Vision, Our Expertise</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="./Images/10.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption mb-5">
+                            <p class="fs-3 text-uppercase">Welcome to a symphony of innovation and beauty</p>
+                            <h5 class="mb-5 display-1 fw-bolder text-capitalized text-uppercase">Where design comes alive</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="./Images/2.jpg" class="d-block w-100 c-img" alt="...">
+                        <div class="carousel-caption mb-5">
+                            <p class="fs-3 text-uppercase">Design your dreams with boundless possibilities</p>
+                            <h5 class="mb-5 display-1 fw-bolder text-capitalized text-uppercase">Explore our visionary realm</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="arrow1" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section> 
+    </div>
+        <!-- HOME END --> 
+    
 
-
-      <!-- HERO START -->
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button-slide" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button-slide" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button-slide" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active c-item">
-            <img src="./Images/1.jpg" class="d-block w-100 c-img" alt="...">
-            <div class="carousel-caption mb-5">
-              <p class="fs-3 text-uppercase">Unleashing Creativity, One Design at a Time</p>
-              <h5 class="mb-5 display-1 fw-bolder text-capitalized text-uppercase">Your Vision, Our Expertise</h5>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img src="./Images/10.jpg" class="d-block w-100 c-img" alt="...">
-            <div class="carousel-caption mb-5">
-              <p class="fs-3 text-uppercase">Welcome to a symphony of innovation and beauty</p>
-              <h5 class="mb-5 display-1 fw-bolder text-capitalized text-uppercase">Where design comes alive</h5>
-            </div>
-          </div>
-          <div class="carousel-item c-item">
-            <img src="./Images/2.jpg" class="d-block w-100 c-img" alt="...">
-            <div class="carousel-caption mb-5">
-              <p class="fs-3 text-uppercase">Design your dreams with boundless possibilities</p>
-              <h5 class="mb-5 display-1 fw-bolder text-capitalized text-uppercase">Explore our visionary realm</h5>
-            </div>
-          </div>
-        </div>
-        <div class="arrow" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="arrow1" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <!-- HERO END -->
-
-      <!-- ABOUT START -->
-      <section class="about-ceo" id="about">
-        <div class="card mb-3" >
-          <div class="row g-0">
-            <div class="col-md-4 info-ceo">
-              <img src="./Images/Ceo.png" alt="Carlos P. Adorable - CEO, Cap Media Creatives" class="img-fluid ceo-img">
-              <span class="info-about"></span>
-              <div class="ceo-name">
-                <h3>Carlos Adorable</h3>
-                <h4>CEO, Cap Media Creatives</h4>
-              </div> 
-            </div>
-            <div class="col-md-7">
-              <div class="card-body">
-                <h2>About Us</h2>
-                <div class="content-about">
-                  <p>
-                    Welcome to Cap Media Creatives. I'm Carlos P. Adorable, 
-                    the CEO and founder of this extraordinary venture. 
-                    It's a pleasure to have you here.
-                  </p>
-                  <p>
-                    CAPMEDIA Creatives is a dynamic and innovative
-                    creative firm that specializes in providing unique and
-                    customized solutions to businesses of all sizes. Our
-                    firm is composed of a team of talented individuals
-                    with diverse backgrounds in design, marketing, and
-                    branding.
-                  </p>
-                  <p>
-                    Our services are designed to help businesses
-                    communicate their message effectively and stand
-                    but in a crowded marketplace. We believe that every
-                    business is unique, and we work closely with our
-                    clients to create solutions that are tailored to their
-                    specific needs.
-                  </p>
-                  <p>
-                    At CAPMEDIA Creatives, we offer a wide range of
-                    services, including branding, graphic design, social
-                    media market strategies, video production, and
-                    photography. Our team of experts is dedicated to
-                    delivering high-quality work that meets or exceeds
-                    our clients' expectations.
-                  </p>
-                  <p>
-                    We understand that our clients are looking for more
-                    than just creative solutions - they're looking for
-                    results. That's why we focus on delivering solutions
-                    that are not only visually stunning but also effective
-                    in achieving our clients' goals.
-                  </p>
-                  <p>
-                    Our clients come from a variety of industries,
-                    including healincare, ceoommitted to building
-                    healthcare, technology, finance, and
-                    entertainment. We are committed to
-                    long-term relationships with our clients and helping
-                    them achieve their goals through our creative
-                    solutions.
-                  <p>
-                    If you're looking for a creative partner that can help
-                    take your business to the next level, look no further
-                    than CAPMEDIA Creatives. Contact us today to learn
-                    more about our services and how we can help your
-                    business succeed.
-                  </p>
+    <section class="about" id="about">
+        <div class="about-ceo">
+            <div class="card mb-3" >
+              <div class="row g-0">
+                <div class="col-md-4 info-ceo">
+                  <img src="./Images/Ceo.png" alt="Carlos P. Adorable - CEO, Cap Media Creatives" class="img-fluid ceo-img">
+                  <span class="info-about"></span>
+                  <div class="ceo-name">
+                    <h3>Carlos Adorable</h3>
+                    <h4>CEO, Cap Media Creatives</h4>
+                  </div> 
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h2>About Us</h2>
+                    <div class="content-about">
+                      <p>
+                        Welcome to Cap Media Creatives. I'm Carlos P. Adorable, 
+                        the CEO and founder of this extraordinary venture. 
+                        It's a pleasure to have you here.
+                      </p>
+                      <p>
+                        CAPMEDIA Creatives is a dynamic and innovative
+                        creative firm that specializes in providing unique and
+                        customized solutions to businesses of all sizes. Our
+                        firm is composed of a team of talented individuals
+                        with diverse backgrounds in design, marketing, and
+                        branding.
+                      </p>
+                      <p>
+                        Our services are designed to help businesses
+                        communicate their message effectively and stand
+                        but in a crowded marketplace. We believe that every
+                        business is unique, and we work closely with our
+                        clients to create solutions that are tailored to their
+                        specific needs.
+                      </p>
+                      <p>
+                        At CAPMEDIA Creatives, we offer a wide range of
+                        services, including branding, graphic design, social
+                        media market strategies, video production, and
+                        photography. Our team of experts is dedicated to
+                        delivering high-quality work that meets or exceeds
+                        our clients' expectations.
+                      </p>
+                      <p>
+                        We understand that our clients are looking for more
+                        than just creative solutions - they're looking for
+                        results. That's why we focus on delivering solutions
+                        that are not only visually stunning but also effective
+                        in achieving our clients' goals.
+                      </p>
+                      <p>
+                        Our clients come from a variety of industries,
+                        including healincare, ceoommitted to building
+                        healthcare, technology, finance, and
+                        entertainment. We are committed to
+                        long-term relationships with our clients and helping
+                        them achieve their goals through our creative
+                        solutions.
+                      <p>
+                        If you're looking for a creative partner that can help
+                        take your business to the next level, look no further
+                        than CAPMEDIA Creatives. Contact us today to learn
+                        more about our services and how we can help your
+                        business succeed.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- ABOUT END -->
+    </section>
 
-      <!-- PORTFOLIO START -->
-      <section class="portfolio" id="portfolio">
-        hello world
-      </section>
 
-      <!-- PORTFOLIO END -->
+    <section class="portfolio" id="portfolio">
 
-      <!-- SERVICES START -->
-      <section class="services" id="services">
-      
-      </section>
-      <!-- SERVICES END -->
+    </section>
 
-      <!-- CONTACT START -->
-      <section class="contact" id="contact">
-        <div class="box-wrapper">
-          <div class="info-wrap">
-              <h2 class="info-title">Contact Information</h2>
-              <h3 class="info-sub-title"> Please reach out to us with any questions or concerns you may have.</h3>
-              <ul class="info-details">
-                  <li>
-                      <i class="fas fa-phone-alt"></i>
-                      <span>Phone:</span> <a href="tel:+ 1235 2355 98">+63 966 365 0436</a>
-                  </li>
-                  <li>
-                      <i class="fas fa-paper-plane"></i>
-                      <span>Email:</span> <a href="mailto:info@yoursite.com">cmcreatives.mktg@gmail.com</a>
-                  </li>
-              </ul>
-              <ul class="social-icons">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-          </div>
-          <div class="form-wrap">
-              <form action="#" method="POST">
-                  <h2 class="form-title">Send us a message</h2>
-                  <div class="form-fields">
-                      <div class="form-group">
-                          <input type="text" class="fname" placeholder="First Name">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" class="lname" placeholder="Last Name">
-                      </div>
-                      <div class="form-group">
-                          <input type="email" class="email" placeholder="Mail">
-                      </div>
-                      <div class="form-group">
-                          <input type="number" class="phone" placeholder="Phone">
-                      </div>
-                      <div class="form-group">
-                          <textarea name="message" id="" placeholder="Write your message"></textarea>
-                      </div>
-                  </div>
-                  <input type="submit" value="Send Message" class="submit-button">
-              </form>
-          </div>
-      </div>
-      </section>
-      <!-- CONTACT END -->
 
+    <section class="services" id="services">
+
+    </section>
+
+
+    <section class="contact" id="contact">
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body> 
 </body>
 </html>

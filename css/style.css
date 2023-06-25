@@ -297,7 +297,7 @@ body {
     object-fit: cover;
     cursor: pointer;
     filter: grayscale(80%);
-    transition: .3s linear;
+    transition: .35s ease;
   }
   
   .gallery img:hover{

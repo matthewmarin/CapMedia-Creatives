@@ -388,6 +388,186 @@ body {
   }
 /* Services End */
 
+/* Contact Form Start */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .contact {
+    padding-top: 100px;
+    background-color: #1e2022;
+  }
+  
+ button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #E6B31E;
+  }
+  
+  .screen-header-button.maximize {
+    background: #f4f4f4;
+  }
+  
+  .screen-header-button.minimize {
+    background: #181a1c;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #E6B31E;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #f4f4f4;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: .8rem;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #E6B31E;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #E6B31E;
+  }
+/* Contact Form End */
+
 /* Footer Start */
 ul {
     margin: 0px;
@@ -399,6 +579,7 @@ ul {
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
+  margin-top: -30px;
 }
 .single-cta i {
   color: #E6B31E;
@@ -423,6 +604,7 @@ ul {
 .footer-content {
   position: relative;
   z-index: 2;
+  margin-top: -30px;
 }
 .footer-pattern img {
   position: absolute;
@@ -455,7 +637,7 @@ ul {
   margin-bottom: 20px;
 }
 .footer-social-icon a {
-  color: #fff;
+  color: #181a1c;
   font-size: 16px;
   margin-right: 15px;
 }
@@ -467,7 +649,7 @@ ul {
   border-radius: 50%;
 }
 .facebook-bg{
-  background: #3B5998;
+  background: #E6B31E;
 }
 .footer-widget-heading h3 {
   color: #fff;
@@ -499,33 +681,10 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
 }
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-}
-.subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #E6B31E;
-    padding: 13px 20px;
-    border: 1px solid #E6B31E;
-    top: 0;
-}
-.subscribe-form button i {
-  color: #181a1c;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
 .copyright-area{
   background: #202020;
   padding: 25px 0;
+  margin-top: -40px;
 }
 .copyright-text p {
   margin: 0;
@@ -549,19 +708,43 @@ ul {
   color: #878787;
   text-decoration: none;
 }
-
+/* Footer End */
 
 /* BreakPoints Start */
 @media (min-width: 375px) {
     .navbar-brand {
         color: #f4f4f4;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .ceo-img {
-        left: -40px;
+        justify-items: center;
     }
-
+    .gallery {
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
 
 @media (min-width: 576px) {
     .navbar-brand {
@@ -590,9 +773,16 @@ ul {
         left: 150px;
         height: 50vh;
     }
-   
 }
 
+@media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+    .screen-body-item {
+      padding: 0;
+    }
+  }
 
 @media (min-width: 768px) {
     .ceo-img {
@@ -656,7 +846,7 @@ ul {
     
     .nav-link {
         color: #f4f4f4;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-right: 30px;
     }
     .ceo-img {
@@ -688,10 +878,6 @@ ul {
     .content-about {
         height: 100vh;
     }
-    
  }
-
-
- /* Footer */
 
  

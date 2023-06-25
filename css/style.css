@@ -294,10 +294,10 @@ body {
     height: 0;
     min-height: 100%;
     min-width: 100%;
-    object-fit: cover;
+    object-fit:cover;
     cursor: pointer;
     filter: grayscale(80%);
-    transition: .35s ease;
+    transition: .3s linear;
   }
   
   .gallery img:hover{
@@ -376,11 +376,11 @@ body {
     background-position: 0 100%;
   }
   .card1:hover .icon-wrapper1 {
-    background-color: #ffffff;
-    color: #2c7bfe;
+    background-color: #181a1c;
+    color: #E6B31E;
   }
   .card1:hover h3 {
-    color: #ffffff;
+    color: #181a1c;
   }
   .card1:hover p {
     color: #181a1c;
